@@ -186,7 +186,17 @@ Now lets synthesize D-Flip Flop designs
 
 <img width="371" height="22" alt="Screenshot 2026-05-20 230433" src="https://github.com/user-attachments/assets/d419972c-f9b9-4fd8-9d1e-b0a99c80530a" />
 
-* We wrote Flop with active high reset but Flop has active low reset `RESET_B`. So, inverter was used
+* We wrote Flop with active high reset but std. cell library has Flop with active low reset `RESET_B`. So, inverter was used
 
   
 <img width="566" height="142" alt="Screenshot 2026-05-20 230458" src="https://github.com/user-attachments/assets/c61e484a-10ba-4c3b-a2a2-5ac96510e96a" />
+
+
+* Similarly do for other flops. Ex: Synch reset dff
+
+  <img width="865" height="217" alt="Screenshot 2026-05-20 231719" src="https://github.com/user-attachments/assets/2d95b85e-c47c-4533-9a02-f59c4de81433" />
+
+* What we wrote vs What we got
+
+  <img width="762" height="282" alt="Screenshot 2026-05-20 231737" src="https://github.com/user-attachments/assets/edfc0896-7b16-497d-adfd-a3c7d85b9a02" />
+
