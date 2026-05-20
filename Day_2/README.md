@@ -200,3 +200,22 @@ Now lets synthesize D-Flip Flop designs
 
   <img width="762" height="282" alt="Screenshot 2026-05-20 231737" src="https://github.com/user-attachments/assets/edfc0896-7b16-497d-adfd-a3c7d85b9a02" />
 
+
+### Interesting optimisations part1
+
+* Lets see RTL code
+
+  <img width="1372" height="68" alt="Screenshot 2026-05-20 232815" src="https://github.com/user-attachments/assets/6338d81f-3c06-4224-98b7-4ff9fda4dd2e" />
+
+<img width="868" height="336" alt="Screenshot 2026-05-20 232945" src="https://github.com/user-attachments/assets/26edbb81-6015-4607-9e81-e1311cafbfa5" />
+
+* If you observe code-1, we can find that output can be given by appending a `0` at `LSB` of input.This implies there is no need of hardware
+
+  <img width="1262" height="721" alt="Screenshot 2026-05-20 233346" src="https://github.com/user-attachments/assets/47d9a5fe-436c-4357-a480-f02cf707733b" />
+
+* Synthesis output is
+
+  <img width="862" height="777" alt="Screenshot 2026-05-20 233742" src="https://github.com/user-attachments/assets/c2a18050-9d02-4b28-aef6-c763608d2c6f" />
+
+  We can observe that `Dont call ABC as there is nothing to map` while trying to map std. cell library cells as hardware is not needed for our design
+
