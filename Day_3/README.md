@@ -13,6 +13,9 @@
 
 ### Introduction to optimisations part2
 
+<img width="568" height="382" alt="Screenshot 2026-05-21 011626" src="https://github.com/user-attachments/assets/0cc2bb27-14d3-4d83-99ca-2a62529e5647" />
+
+
 * `Y` is always `1` irrespective of input `A` due to sequential constant propogation, so no hardware is required
 
  
@@ -20,8 +23,12 @@
 
 
 * Can we say `Q = Set`
-   No as `Q` follows `Set` only `Set=1`
-   When `Set` removed(set=0) then `Q` wait until ext clock edge and folloes `D` implies no dependency on `Set`
+* No as `Q` follows `Set` only `Set=1`
+* When `Set` removed(set=0) then `Q` wait until ext clock edge and folloes `D` implies no dependency on `Set`
+* So flop canotbe optimised, whole logic need to be retained
+* For flop to be sequential constant `Q` should be always constant
 
 
   <img width="1461" height="492" alt="Screenshot 2026-05-21 010540" src="https://github.com/user-attachments/assets/0423de2d-6241-4506-b1b7-0a07a283f097" />
+
+
