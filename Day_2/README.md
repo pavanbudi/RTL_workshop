@@ -157,6 +157,8 @@ Initialise Flop state as combination circuit taking input from Flop may evaluate
 
   <img width="941" height="607" alt="Screenshot 2026-05-20 210435" src="https://github.com/user-attachments/assets/e87b4ab7-ccc8-4dfe-aac6-569d7f309ec9" />
 
+<img width="1875" height="741" alt="Screenshot 2026-05-20 210734" src="https://github.com/user-attachments/assets/f9f65bea-e812-43a4-8eba-e21b1dec3db4" />
+
   <img width="1333" height="722" alt="Screenshot 2026-05-20 210121" src="https://github.com/user-attachments/assets/abf47b3b-cd94-41d7-882e-45cbc0d8a2bf" />
 
 
