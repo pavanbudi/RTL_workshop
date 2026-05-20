@@ -112,8 +112,7 @@
 * Now let's do submodule level synthesis. So lets do `submodule1` synthesis from `multiple module`
 *  We cotrol with command
   ```
-  bash
-  synth -top
+  synth -top module/submodule
   ```
   
   
