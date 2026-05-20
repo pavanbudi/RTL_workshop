@@ -161,4 +161,25 @@ Initialise Flop state as combination circuit taking input from Flop may evaluate
 
   <img width="1333" height="722" alt="Screenshot 2026-05-20 210121" src="https://github.com/user-attachments/assets/abf47b3b-cd94-41d7-882e-45cbc0d8a2bf" />
 
+### Lab flop synthesis simulations part1
 
+Lets verify a D-Flip Flop 
+
+<img width="1627" height="368" alt="Screenshot 2026-05-20 224804" src="https://github.com/user-attachments/assets/f874ebb0-abbe-4ae7-aee1-d46dd0eeee2d" />
+
+<img width="860" height="322" alt="Screenshot 2026-05-20 224956" src="https://github.com/user-attachments/assets/1e3c2e56-7ddb-4d2d-b146-33d7c700d79b" />
+
+### Lab flop synthesis simulations part2
+
+Now lets synthesize D-Flip Flop designs
+
+<img width="1307" height="671" alt="Screenshot 2026-05-20 225347" src="https://github.com/user-attachments/assets/919ed41c-6176-46a6-916e-1ede0b449192" />
+
+* Since we are D-Flip Flop , we are supposed to use `dfflibmap`
+  Sometimes separate library are kept for std. cell library and flop cell library
+  So we need to tell tool explicitly, where to pick D-flipflop in design, here we have same library 
+  for flops, std. cells (so we point same library)
+
+ <img width="1067" height="58" alt="Screenshot 2026-05-20 230123" src="https://github.com/user-attachments/assets/57ee1dd3-b0b2-40f4-adba-f1388862c731" />
+
+  
