@@ -118,3 +118,9 @@
   <img width="1700" height="318" alt="Screenshot 2026-05-20 180022" src="https://github.com/user-attachments/assets/62bb0bed-d922-4bf0-9d20-d8830bbea2c4" />
 
 
+**Why we do module level synthesis?**
+* When module is instantiated multiple times then synthesize module once and replicate it to form top module
+* To synthesize by divide and conquer method in case of massive designs like giving portion by portion to tool to get optimised design then stitich all to get massive top netlist
+
+ <img width="881" height="495" alt="Screenshot 2026-05-20 181309" src="https://github.com/user-attachments/assets/5acb8956-9f9d-445b-a0f9-3931fa6fae01" />
+ 
