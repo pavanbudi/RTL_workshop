@@ -96,10 +96,13 @@
 
 ### Hier synthesis flat synthesis part2
 
-* Now, o write `Flat` netlist we use command `flatten` and write nelist
+* Now, to write `Flat` netlist we use command `flatten` and write nelist
 
   <img width="633" height="513" alt="Screenshot 2026-05-20 123417" src="https://github.com/user-attachments/assets/80e2a7ed-aa06-4ac2-a74e-0ffe56ab0a81" />
 
+* We can observe that hierachies are flattened out and there is direct instantiation of `and`, `or` gate(see right side image, i.e.. flattened netlist code)
+
+  <img width="1662" height="837" alt="Screenshot 2026-05-20 163625" src="https://github.com/user-attachments/assets/9c794104-aa64-464a-877a-d7c09ec8493e" />
 
 
 
