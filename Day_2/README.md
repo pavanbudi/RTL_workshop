@@ -110,7 +110,12 @@
 
 
 * Now let's do submodule level synthesis. So lets do `submodule1` synthesis from `multiple module`
-
+*  We cotrol with command
+  ```
+  bash
+  synth -top
+  ```
+  
   
 <img width="1531" height="300" alt="Screenshot 2026-05-20 175753" src="https://github.com/user-attachments/assets/5873e48a-ebd6-4d66-8767-7dc4a87afcaa" />
 
