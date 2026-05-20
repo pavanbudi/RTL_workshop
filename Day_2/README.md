@@ -149,3 +149,14 @@ Initialise Flop state as combination circuit taking input from Flop may evaluate
 
 
 ### Why Flops and Flop coding styles part2
+
+
+* Different types of D-flops and their design
+
+  <img width="870" height="213" alt="Screenshot 2026-05-20 210404" src="https://github.com/user-attachments/assets/4c53c5d8-4491-4ef5-8f41-40e190e88b41" />
+
+  <img width="941" height="607" alt="Screenshot 2026-05-20 210435" src="https://github.com/user-attachments/assets/e87b4ab7-ccc8-4dfe-aac6-569d7f309ec9" />
+
+  <img width="1333" height="722" alt="Screenshot 2026-05-20 210121" src="https://github.com/user-attachments/assets/abf47b3b-cd94-41d7-882e-45cbc0d8a2bf" />
+
+
