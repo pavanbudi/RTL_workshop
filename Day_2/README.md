@@ -129,10 +129,15 @@
  <img width="881" height="495" alt="Screenshot 2026-05-20 181309" src="https://github.com/user-attachments/assets/5acb8956-9f9d-445b-a0f9-3931fa6fae01" />
  
 
-
 ## Various Flop Coding Styles and optimization
 
 ### Why Flops and Flop coding styles part1
 
-* Combinational 
+*  More the combinational circuits  more will be glitches in output, implies output will never settle down
+
+*  So, we want a element to store a value i.e., Flop. Ex:D-Flip Flop
+
+*  By using them in middle of chain of combination circuits, glitches avoided to propogate as they give output  based on clock edges. So, even input has multiple glitches (from combination circuit) output will be stable (from Flop) which can also help in providing stable input to next combination circuit in design, reducing in propogation of glitch
+
+  
 <img width="947" height="798" alt="Screenshot 2026-05-20 182200" src="https://github.com/user-attachments/assets/9475e652-3726-4f2f-82a2-0d5c289a1813" />
