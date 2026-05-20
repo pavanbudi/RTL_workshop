@@ -141,3 +141,7 @@
 
   
 <img width="947" height="798" alt="Screenshot 2026-05-20 182200" src="https://github.com/user-attachments/assets/9475e652-3726-4f2f-82a2-0d5c289a1813" />
+
+**Note:**
+Initialise Flop state as combination circuit taking input from Flop may evaluate garbage value and produce output, so to initialise clock , there is control pins:
+* SET, RESET
