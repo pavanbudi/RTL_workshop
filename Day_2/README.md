@@ -217,5 +217,5 @@ Now lets synthesize D-Flip Flop designs
 
   <img width="862" height="777" alt="Screenshot 2026-05-20 233742" src="https://github.com/user-attachments/assets/c2a18050-9d02-4b28-aef6-c763608d2c6f" />
 
-  We can observe that `Dont call ABC as there is nothing to map` while trying to map std. cell library cells as hardware is not needed for our design
+  We can observe from above image that `Dont call ABC as there is nothing to map` while trying to map std. cell library cells as hardware is not needed for our design
 
