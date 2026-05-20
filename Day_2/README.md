@@ -109,6 +109,12 @@
   <img width="1840" height="372" alt="Screenshot 2026-05-20 174615" src="https://github.com/user-attachments/assets/a7ca8f73-956c-40a5-83fb-a7316a225ce5" />
 
 
+* Now let's do submodule level synthesis. So lets do `submodule1` synthesis from `multiple module`
 
   
+<img width="1531" height="300" alt="Screenshot 2026-05-20 175753" src="https://github.com/user-attachments/assets/5873e48a-ebd6-4d66-8767-7dc4a87afcaa" />
+
+  
+  <img width="1700" height="318" alt="Screenshot 2026-05-20 180022" src="https://github.com/user-attachments/assets/62bb0bed-d922-4bf0-9d20-d8830bbea2c4" />
+
 
