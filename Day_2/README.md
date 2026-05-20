@@ -104,6 +104,9 @@
 
   <img width="1662" height="837" alt="Screenshot 2026-05-20 163625" src="https://github.com/user-attachments/assets/9c794104-aa64-464a-877a-d7c09ec8493e" />
 
+* Flattened Netlist
+
+  <img width="1840" height="372" alt="Screenshot 2026-05-20 174615" src="https://github.com/user-attachments/assets/a7ca8f73-956c-40a5-83fb-a7316a225ce5" />
 
 
 
