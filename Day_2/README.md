@@ -145,3 +145,7 @@
 **Note:**
 Initialise Flop state as combination circuit taking input from Flop may evaluate garbage value and produce output, so to initialise clock , there is control pins:
 * SET, RESET
+* Can be synchronous or asynchronous
+
+
+### Why Flops and Flop coding styles part2
