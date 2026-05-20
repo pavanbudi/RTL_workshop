@@ -19,13 +19,13 @@
 * `Y` is always `1` irrespective of input `A` due to sequential constant propogation, so no hardware is required
 
  
- <img width="1631" height="845" alt="Screenshot 2026-05-21 005522" src="https://github.com/user-attachments/assets/92b0a755-9d03-49c1-8d4f-d132f0c0d713" />
+ <img width="792" height="312" alt="Screenshot 2026-05-21 011933" src="https://github.com/user-attachments/assets/68099eeb-bcd0-4c51-a2d7-a374af7a1db1" />
 
 
 * Can we say `Q = Set`
-* No as `Q` follows `Set` only `Set=1`
-* When `Set` removed(set=0) then `Q` wait until ext clock edge and folloes `D` implies no dependency on `Set`
-* So flop canotbe optimised, whole logic need to be retained
+* No as `Q` follows `Set` only when `Set=1`
+* When `Set` removed(set=0) then `Q` wait until ext clock edge and follows `D` implies no dependency on `Set`
+* So flop canot be optimised, whole logic need to be retained
 * For flop to be sequential constant `Q` should be always constant
 
 
