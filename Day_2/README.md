@@ -233,7 +233,7 @@ Now lets synthesize D-Flip Flop designs
 
   <img width="263" height="57" alt="Screenshot 2026-05-20 235026" src="https://github.com/user-attachments/assets/45d448d2-9ad0-4116-a71e-b8848e0acf70" />
 
-* It can be reduced as 
+* It can be optimised as 
 
   <img width="822" height="432" alt="Screenshot 2026-05-20 234714" src="https://github.com/user-attachments/assets/4d0857b8-0f96-4e05-b30b-c32223e61d44" />
 
@@ -242,7 +242,7 @@ Now lets synthesize D-Flip Flop designs
   
   <img width="1847" height="473" alt="Screenshot 2026-05-20 234811" src="https://github.com/user-attachments/assets/593859a6-37e9-4f3b-9818-4d424ca537d7" />
 
-* After writing netlist and checking with our predicted sythesis output(observe that it is matching)
+* After writing netlist and checking with our predicted synthesis output(observe that it is matching)
 
   <img width="1712" height="777" alt="Screenshot 2026-05-20 234834" src="https://github.com/user-attachments/assets/f7c77b8e-54ca-4d0f-b5ad-da67ce23a2ca" />
 
