@@ -49,7 +49,60 @@
 
 * Comparing different `and` cells with differet driving stregths  
   1)  You can observe that area increases from `_0` to `_4` as wider transistors used to drive more current  
-  2)  Similarly power dissipation also increases as wider transistors have wider channels and larger gate surface areas, which increases both parasitic capacitance and subthreshold leakage paths.Dynamic power also increases because the internal capacitance of the larger cell takes more energy to switch.  
+  2)  Similarly power dissipation also increases as wider transistors have wider channels and larger gate surface areas, which increases both parasitic capacitance and 
+      subthreshold leakage paths.Dynamic power also increases because the internal capacitance of the larger cell takes more energy to switch.  
   3)  Delay decreases
 
 <img width="1787" height="661" alt="Screenshot 2026-05-20 105501" src="https://github.com/user-attachments/assets/3784b678-99d8-42eb-b197-13cd02e4ce19" />
+
+## Hierarchical vs Flat Synthesis
+
+### Hier synthesis flat synthesis part1
+
+* Open `multiple modules.v`
+
+  <img width="1408" height="61" alt="Screenshot 2026-05-20 120059" src="https://github.com/user-attachments/assets/145fe8bc-543a-43f8-9ead-6b984c9e897a" />
+
+  <img width="1657" height="462" alt="Screenshot 2026-05-20 120315" src="https://github.com/user-attachments/assets/2b903dc5-d993-4de0-9a9e-65144037a866" />
+
+  * As per above code, we expect synthesis output like below:
+
+    <img width="840" height="510" alt="Screenshot 2026-05-20 120526" src="https://github.com/user-attachments/assets/fdb96754-b984-433f-a8ad-934ef7b946c7" />
+
+
+  * We expect `or`, `and` gate but it is showing `u1` and `u2` as they are instances of `submodule1` and `submodule2`. This is called **Hierarchical Design** as we see hierachies
+
+    <img width="511" height="536" alt="Screenshot 2026-05-20 121203" src="https://github.com/user-attachments/assets/12c03e0e-dce3-4ede-a4bf-fe542d8fb4bc" />
+
+* Now write nelist
+
+  <img width="1637" height="350" alt="Screenshot 2026-05-20 121541" src="https://github.com/user-attachments/assets/085ebf4f-2e4a-4f57-af99-2e5e6dfa2323" />
+
+
+* We can see that hierarchies are preserved
+
+  <img width="1651" height="806" alt="Screenshot 2026-05-20 121831" src="https://github.com/user-attachments/assets/828e1162-2907-470b-9011-bc10fbdd530a" />
+
+  <img width="1451" height="702" alt="Screenshot 2026-05-20 121953" src="https://github.com/user-attachments/assets/426707d4-ab8a-492b-a5b0-3418182227a1" />
+
+* We can observe synthesis tool give `nand` instead of `or`
+
+  <img width="757" height="436" alt="Screenshot 2026-05-20 122254" src="https://github.com/user-attachments/assets/a5db146d-ae4d-4e02-bdea-8a32beadb79f" />
+
+* It is given like that as stacked pmos is not preferred as it has poor mobility and to improve it, 
+  width of transistor should be increased which  requires more area(so logic 1 given by synthesis tool instead of logic2)
+
+  <img width="887" height="498" alt="Screenshot 2026-05-20 122513" src="https://github.com/user-attachments/assets/3ce6d8c3-00e9-4667-aeba-76ee9ce7807d" />
+
+### Hier synthesis flat synthesis part2
+
+* Now, o write `Flat` netlist we use command `flatten` and write nelist
+
+  <img width="633" height="513" alt="Screenshot 2026-05-20 123417" src="https://github.com/user-attachments/assets/80e2a7ed-aa06-4ac2-a74e-0ffe56ab0a81" />
+
+
+
+
+
+  
+
