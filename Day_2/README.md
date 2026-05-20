@@ -175,11 +175,18 @@ Now lets synthesize D-Flip Flop designs
 
 <img width="1307" height="671" alt="Screenshot 2026-05-20 225347" src="https://github.com/user-attachments/assets/919ed41c-6176-46a6-916e-1ede0b449192" />
 
-* Since we are D-Flip Flop , we are supposed to use `dfflibmap`
+* Since we use D-Flip Flop , we are supposed to use `dfflibmap`
   Sometimes separate library are kept for std. cell library and flop cell library
   So we need to tell tool explicitly, where to pick D-flipflop in design, here we have same library 
   for flops, std. cells (so we point same library)
 
  <img width="1067" height="58" alt="Screenshot 2026-05-20 230123" src="https://github.com/user-attachments/assets/57ee1dd3-b0b2-40f4-adba-f1388862c731" />
 
+<img width="475" height="42" alt="Screenshot 2026-05-20 230417" src="https://github.com/user-attachments/assets/ea183650-4c52-4973-910f-08b74b8e860f" />
+
+<img width="371" height="22" alt="Screenshot 2026-05-20 230433" src="https://github.com/user-attachments/assets/d419972c-f9b9-4fd8-9d1e-b0a99c80530a" />
+
+* We wrote Flop with active high reset but Flop has active low reset `RESET_B`. So, inverter was used
+
   
+<img width="566" height="142" alt="Screenshot 2026-05-20 230458" src="https://github.com/user-attachments/assets/c61e484a-10ba-4c3b-a2a2-5ac96510e96a" />
