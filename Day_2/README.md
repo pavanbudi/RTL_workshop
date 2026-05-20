@@ -128,3 +128,11 @@
 
  <img width="881" height="495" alt="Screenshot 2026-05-20 181309" src="https://github.com/user-attachments/assets/5acb8956-9f9d-445b-a0f9-3931fa6fae01" />
  
+
+
+## Various Flop Coding Styles and optimization
+
+### Why Flops and Flop coding styles part1
+
+* Combinational 
+<img width="947" height="798" alt="Screenshot 2026-05-20 182200" src="https://github.com/user-attachments/assets/9475e652-3726-4f2f-82a2-0d5c289a1813" />
