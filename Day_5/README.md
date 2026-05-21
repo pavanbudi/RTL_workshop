@@ -156,7 +156,7 @@
 <img width="771" height="661" alt="Screenshot 2026-05-22 014045" src="https://github.com/user-attachments/assets/970dd055-46ff-48e4-8727-51f0953c9b5c" />
 
 
-* We can observe that `Y` is following neither `i2` nor `i3` due to overlapping cases which shows that simulator is getting confused
+* We can observe that `Y` is following neither `i2` nor `i3` due to overlapping case statements(observe from code) which shows that simulator is getting confused
 
   
 <img width="1852" height="705" alt="Screenshot 2026-05-22 014443" src="https://github.com/user-attachments/assets/637f845f-c62d-4635-9545-34285623d7c1" />
