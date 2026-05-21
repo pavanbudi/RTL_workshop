@@ -115,4 +115,25 @@
 
   <img width="526" height="518" alt="Screenshot 2026-05-21 103407" src="https://github.com/user-attachments/assets/572360a1-3fb5-4341-ad6e-f5876cf9576f" />
 
+* Now consider `DFF_CONST3`
 
+* Observe that `Q` will be `1` always except for one cycle as when `RST` becomes `LOW` then `Q1` is `0` until nxt `posedge` and it will be `1` at `posedge` but even same `clk` is shared by Second Flop `Q` wont be `1` similar to  `Q1` as there will be some propogation delay(`tclk2q`)  for `Q1` to change. So `Q` takes previous value of `Q1`('0')
+
+* As there is no direct relation with `RST` for both `Q1` and `Q` (observe waveforms) , design cant be optimised, implies both flops will present in netlist
+
+  <img width="1822" height="830" alt="Screenshot 2026-05-21 111254" src="https://github.com/user-attachments/assets/8ff5d53b-8484-49cd-a528-31b5bec22f34" />
+
+  
+### Sequential Logic Optimisations part3
+
+
+<img width="866" height="220" alt="Screenshot 2026-05-21 112738" src="https://github.com/user-attachments/assets/672a942e-6cda-4ee6-9976-af89794f2991" />
+
+* Work on dff_const4 & 5
+
+## Sequential optimzations for unused outputs
+
+### Seq optimisation unused outputs part1
+
+* We have studied `Combinational` and`sequential` optimisation, lets see another optimisation
+  `Unused output` optimisation
