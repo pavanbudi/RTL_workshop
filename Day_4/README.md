@@ -59,5 +59,46 @@
 
   ### Lab GLS Synth Sim Mismatch part1
 
+  * To run GLS we need:
+    1) Netlist
+    2) Verilog models of std. cell library
+    3) Testbench
+
+  * Files we use for this lab
+ 
+    <img width="1546" height="60" alt="Screenshot 2026-05-21 153545" src="https://github.com/user-attachments/assets/9c5250b9-2a46-4a12-a2c5-a5012d2516e9" />
+
+    <img width="892" height="770" alt="Screenshot 2026-05-21 153631" src="https://github.com/user-attachments/assets/6308d80b-f9fc-4b67-a83e-8124ed4a2764" />
+
+
+* Lets do RTL simulation
+
+  <img width="1338" height="227" alt="Screenshot 2026-05-21 153847" src="https://github.com/user-attachments/assets/5600f031-fc56-42d4-bb6b-d71cc9ad15b4" />
+
+
+<img width="472" height="300" alt="Screenshot 2026-05-21 153940" src="https://github.com/user-attachments/assets/f3d452c9-c386-4ac3-9e66-76590805a7b7" />
+
+
+* Synthesize
+
+  <img width="862" height="207" alt="Screenshot 2026-05-21 154136" src="https://github.com/user-attachments/assets/45f222ed-f7d0-4e0d-bfaf-b7a6cf6e1113" />
+
+* Lets do `GLS`
+  Invoke `iverilog` with
+  1) Verilog Models of std. cells
+  2) Std. cell library
+  3) Netlist
+
+
+    <img width="1852" height="96" alt="Screenshot 2026-05-21 154616" src="https://github.com/user-attachments/assets/bfcccc46-4abe-45f6-84aa-19922e2b59d0" />
+
+  * `GLS` output
+    We can verify desig now
+
+    <img width="862" height="382" alt="Screenshot 2026-05-21 154839" src="https://github.com/user-attachments/assets/c5d62c6f-9ffa-4a1d-9eaa-3924ebe4d1c6" />
+
+
+
+
   
 
