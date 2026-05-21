@@ -84,7 +84,7 @@
   <img width="862" height="207" alt="Screenshot 2026-05-21 154136" src="https://github.com/user-attachments/assets/45f222ed-f7d0-4e0d-bfaf-b7a6cf6e1113" />
 
 * Lets do `GLS`
-  Invoke `iverilog` with
+  >Invoke `iverilog` with
   1) Verilog Models of std. cells
   2) Std. cell library
   3) Netlist
