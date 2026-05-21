@@ -143,3 +143,11 @@
 
 ### Synth sim mismatch blocking statement part2
 
+* Now lets see synthesized netlist
+
+  <img width="865" height="270" alt="Screenshot 2026-05-21 184731" src="https://github.com/user-attachments/assets/df80fca7-1aa5-4f41-ae23-f946afd79e64" />
+
+
+* Comparison between `GLS` and `RTL` output
+
+  <img width="887" height="340" alt="Screenshot 2026-05-21 185059" src="https://github.com/user-attachments/assets/56589410-9035-4789-a37d-43a039574e81" />
