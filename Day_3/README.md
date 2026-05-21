@@ -86,5 +86,31 @@
   <img width="1055" height="63" alt="Screenshot 2026-05-21 014642" src="https://github.com/user-attachments/assets/856ee431-3f15-42fe-b129-64f82ddeecfb" />
 
 
+## Sequential logic optimizations
+
+### Sequential Logic Optimisations part1
+
+* See files we operate and open a design
+
+ <img width="912" height="107" alt="Screenshot 2026-05-21 100347" src="https://github.com/user-attachments/assets/3a6ae9d8-c811-4810-9454-b3cf971a065b" />
+
+  <img width="1647" height="785" alt="Screenshot 2026-05-21 101916" src="https://github.com/user-attachments/assets/eef86052-b5f5-46ae-b3f2-70eb34003c83" />
 
 
+* Analysing design and predicting hardware
+
+  <img width="991" height="477" alt="Screenshot 2026-05-21 102209" src="https://github.com/user-attachments/assets/1fe6063e-c85c-461c-9f55-15f260544c3d" />
+
+ * Now synthesize
+ 
+<img width="1337" height="692" alt="Screenshot 2026-05-21 102704" src="https://github.com/user-attachments/assets/1200ddfd-16ba-46cc-948f-ebd96ed16859" />
+
+<img width="1027" height="802" alt="Screenshot 2026-05-21 103010" src="https://github.com/user-attachments/assets/a43da493-709c-4f85-a81a-48d42458d29f" />
+
+<img width="657" height="737" alt="Screenshot 2026-05-21 103041" src="https://github.com/user-attachments/assets/e9a7aa13-d33f-431f-a98f-16d6a8725ff2" />
+
+### Sequential Logic Optimisations part2
+
+* Lets synthesize another design
+
+  <img width="526" height="518" alt="Screenshot 2026-05-21 103407" src="https://github.com/user-attachments/assets/572360a1-3fb5-4341-ad6e-f5876cf9576f" />
