@@ -123,4 +123,23 @@
 
 ### Synth sim mismatch blocking statement part1
 
+* Now lets study simulation mismatch in case of blocking statement
+* Open `blocking_caveat.v` file
+
+ <img width="1277" height="63" alt="Screenshot 2026-05-21 162450" src="https://github.com/user-attachments/assets/e9e3deed-2701-4882-96db-d7d1b6e08349" />
+ 
+<img width="307" height="78" alt="Screenshot 2026-05-21 162624" src="https://github.com/user-attachments/assets/49b2bb9b-6644-4897-a61b-c515cfadc40c" />
+
+* As `blocking assigment` used in reverse order, during simulation output will be given as if `X` is flopped output
+  
+
+<img width="377" height="192" alt="Screenshot 2026-05-21 162712" src="https://github.com/user-attachments/assets/a7a7b20e-acb3-4019-a26e-2a5ab6c7dd1c" />
+
+
+* We can observe that our `RTL` simulated output is not giving output as per our hardware. in `RTL`, previous state of `X` is considered
+
+<img width="872" height="403" alt="Screenshot 2026-05-21 163017" src="https://github.com/user-attachments/assets/4f5b5201-e11c-4b7f-b7ce-42617ffdf06e" />
+
+
+### Synth sim mismatch blocking statement part2
 
