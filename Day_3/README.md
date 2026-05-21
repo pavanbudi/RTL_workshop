@@ -137,3 +137,41 @@
 
 * We have studied `Combinational` and`sequential` optimisation, lets see another optimisation
   `Unused output` optimisation
+
+* We can observe that output `Q` depends oly on `count[0]` , so design can be optimised
+
+  <img width="306" height="142" alt="Screenshot 2026-05-21 113945" src="https://github.com/user-attachments/assets/01d0c5df-8557-43d5-a718-1fbe95085b3f" />
+
+  <img width="1155" height="400" alt="Screenshot 2026-05-21 114113" src="https://github.com/user-attachments/assets/d7972517-48c8-44cc-ba99-39880c64539c" />
+
+* Synthesis output
+
+  <img width="1847" height="358" alt="Screenshot 2026-05-21 114157" src="https://github.com/user-attachments/assets/fde25310-c13d-4b2c-ada7-50a39d94fd4e" />
+
+* By analysing synthesis, we understand that only one flop is used. So, all other inputs are optimised
+
+  <img width="252" height="120" alt="Screenshot 2026-05-21 114239" src="https://github.com/user-attachments/assets/8aaad624-e0dd-45e4-aa71-87baf71099e5" />
+
+
+### Seq optimisation unused outputs part2
+
+* Lets modify code and analyse another design
+
+  <img width="1180" height="42" alt="Screenshot 2026-05-21 114502" src="https://github.com/user-attachments/assets/3da82cf6-f101-46f6-a38b-4123c215dec3" />
+
+
+<img width="812" height="287" alt="Screenshot 2026-05-21 114523" src="https://github.com/user-attachments/assets/378ae970-8107-482b-b24d-f37c4c50b78a" />
+
+
+* Synthesis output
+
+  
+<img width="1158" height="532" alt="Screenshot 2026-05-21 114709" src="https://github.com/user-attachments/assets/67046532-e8a0-4b05-8c44-2034ffc84095" />
+
+
+* Output `Q` logic is given as
+
+* So, outputs that won't have any role in determinig primary outputs, all those will be optimised away
+
+  <img width="681" height="290" alt="Screenshot 2026-05-21 115249" src="https://github.com/user-attachments/assets/7f760342-f3b1-416b-83b0-79c7ae4b0aea" />
+
