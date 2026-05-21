@@ -86,3 +86,78 @@
   <img width="1687" height="380" alt="Screenshot 2026-05-22 010444" src="https://github.com/user-attachments/assets/79c0049b-93f8-4c8e-8550-36c0e5789c97" />
 
 
+## Labs on "Incomplete overlapping Case"
+
+
+### incomplete overlapping Case part1
+
+
+* Files we use
+  
+
+  <img width="1487" height="121" alt="Screenshot 2026-05-22 011408" src="https://github.com/user-attachments/assets/d34fec08-f5e8-4614-bcf2-edd6613d0b99" />
+
+
+  * Lets start `incomp_case`<br> Code and expected design
+ 
+
+    <img width="1595" height="712" alt="Screenshot 2026-05-22 011821" src="https://github.com/user-attachments/assets/bd26e71c-c7a3-4535-9e17-ef2ffd45d4ca" />
+
+
+* Functional simulation
+
+
+<img width="1853" height="630" alt="Screenshot 2026-05-22 012024" src="https://github.com/user-attachments/assets/8d5f4c92-4cd9-4568-9fed-00dc563fac9f" />
+
+
+* Synthesis output<br> We can observe that it is same as our predicted design
+
+
+<img width="867" height="206" alt="Screenshot 2026-05-22 012311" src="https://github.com/user-attachments/assets/d469059d-3c22-42df-b53f-d870d5e26ac3" />
+
+
+### incomplete overlapping Case part2
+
+
+* Now consider `Complete CASE`
+
+
+  <img width="725" height="252" alt="Screenshot 2026-05-22 012744" src="https://github.com/user-attachments/assets/28fc66c2-56bf-43cc-b8fa-7fa208115ef3" />
+
+
+  <img width="1848" height="911" alt="Screenshot 2026-05-22 012842" src="https://github.com/user-attachments/assets/c666a090-df3b-4142-a6b3-1b7b934e8b8a" />
+
+
+ <img width="1837" height="537" alt="Screenshot 2026-05-22 012916" src="https://github.com/user-attachments/assets/0b0277c2-9b47-46ec-9d80-c397071b50ad" />
+
+
+ * Lets consider `Partial CASE Assign`
+
+
+<img width="982" height="511" alt="Screenshot 2026-05-22 013354" src="https://github.com/user-attachments/assets/9c750c00-774e-44d6-8279-ca648e182242" />
+
+
+ <img width="1317" height="747" alt="Screenshot 2026-05-22 013520" src="https://github.com/user-attachments/assets/1b202a4e-5f27-49a0-8a0b-569a0e2f8245" />
+   
+
+
+### incomplete overlapping Case part3
+
+
+* Synthesize
+
+
+<img width="1845" height="588" alt="Screenshot 2026-05-22 013841" src="https://github.com/user-attachments/assets/80756c11-314e-4193-b56a-d11823ea46a6" />
+
+
+* Lets consider `bad CASE`<br> Here simulator gets confused and synthesizer considers latest condition(`2'b1?`)
+
+
+<img width="771" height="661" alt="Screenshot 2026-05-22 014045" src="https://github.com/user-attachments/assets/970dd055-46ff-48e4-8727-51f0953c9b5c" />
+
+
+* We can observe that `Y` is following neither `i2` nor `i3` due to overlapping cases which shows that simulator is getting confused
+
+  
+<img width="1852" height="705" alt="Screenshot 2026-05-22 014443" src="https://github.com/user-attachments/assets/637f845f-c62d-4635-9545-34285623d7c1" />
+
