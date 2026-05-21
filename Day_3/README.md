@@ -114,3 +114,5 @@
 * Lets synthesize another design
 
   <img width="526" height="518" alt="Screenshot 2026-05-21 103407" src="https://github.com/user-attachments/assets/572360a1-3fb5-4341-ad6e-f5876cf9576f" />
+
+
