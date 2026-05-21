@@ -31,11 +31,33 @@
   <img width="868" height="500" alt="Screenshot 2026-05-21 142306" src="https://github.com/user-attachments/assets/6c29a25b-f552-4d4a-a2aa-1555ebe2b820" />
 
 
-### BlockingAndNonBlockingStatementsInVerilog
+### Blocking And NonBlocking Statements In Verilog
 
 <img width="1415" height="907" alt="Screenshot 2026-05-21 142947" src="https://github.com/user-attachments/assets/5b6a05e2-54bc-497a-8746-a7c2138ac5fe" />
 
 * As order is followed in `blocking assignment` , so change of order of `Blocking Assignment` like in right side design in image then it may lead to simulatio mismatch
 
-*  
+ 
 <img width="1487" height="932" alt="Screenshot 2026-05-21 143022" src="https://github.com/user-attachments/assets/8125c005-23cf-4f85-9246-456b0b1c2e1b" />
+
+
+### Caveats With Blocking Statements
+
+* To avoid mismatches due to `Blocking Assignments`, use `Non-Blocking assignments` where order was not problem
+
+* Code mimics a `delay/Flop` but after synthesize we won't see any `Flop`. So which leads to `synthesis Mismatch`
+  
+
+  <img width="572" height="405" alt="Screenshot 2026-05-21 144137" src="https://github.com/user-attachments/assets/6b450dad-1a40-4fa4-b122-84696f1283aa" />
+
+
+  * We can see that both of them give same design after synthesis but if we simulate design, we get wrong output
+    So it is important to run `Gate level Simulation (GLS)` on netlist and match it with expected result
+
+
+  ## Labs on GLS and Synthesis-Simulation Mismatch
+
+  ### Lab GLS Synth Sim Mismatch part1
+
+  
+
