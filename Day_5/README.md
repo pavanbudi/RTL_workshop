@@ -77,8 +77,7 @@
   <img width="1775" height="721" alt="Screenshot 2026-05-22 010107" src="https://github.com/user-attachments/assets/cf750d14-431f-45a7-b3dd-6de761316e0a" />
 
 
-* Lets simulate and sythesize
-  RTL simulation
+* Lets simulate and sythesize<br>RTL simulation
 
 
 <img width="1833" height="547" alt="Screenshot 2026-05-22 010630" src="https://github.com/user-attachments/assets/399b8b89-ec44-4ac3-8b7c-a1b24c43b3ab" />
