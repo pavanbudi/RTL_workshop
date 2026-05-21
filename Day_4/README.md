@@ -98,7 +98,29 @@
     <img width="862" height="382" alt="Screenshot 2026-05-21 154839" src="https://github.com/user-attachments/assets/c5d62c6f-9ffa-4a1d-9eaa-3924ebe4d1c6" />
 
 
+### Lab GLS Synth Sim Mismatch part2
+
+* Similarly lets check `bad_mux.v` which has `sensitivity list mismatch`
+
+<img width="847" height="655" alt="Screenshot 2026-05-21 155720" src="https://github.com/user-attachments/assets/130d9b9b-c8ef-44cd-b138-389bc4b6272d" />
 
 
-  
+* RTL simulated output
+* Activity on `i0`,`i1` are not selected by `always` block. Clearly we can say it is not working like `MUX` as change in `i0`,`i1` are not reflected  when `sel` is `0`,`1` respectively
+* Simulation is showing like a `Flop` kind of behaviour
+
+  <img width="862" height="382" alt="Screenshot 2026-05-21 154839" src="https://github.com/user-attachments/assets/4b5bf5b7-d8ba-4182-a5db-0808c630ade3" />
+
+
+ * `GLS` result is
+
+   <img width="872" height="317" alt="Screenshot 2026-05-21 160344" src="https://github.com/user-attachments/assets/040a4e1e-fe60-4bdf-b740-67c5e954bac9" />
+ 
+* Comparison between `GLS` and `RTL`  
+
+<img width="1853" height="783" alt="Screenshot 2026-05-21 160516" src="https://github.com/user-attachments/assets/b7d20c04-b52a-43d2-b7b8-beb3fd6c2a8f" />
+
+
+### Synth sim mismatch blocking statement part1
+
 
