@@ -1,4 +1,4 @@
-# Day 5 - Optimization in synthesis
+<img width="1842" height="691" alt="image" src="https://github.com/user-attachments/assets/99b9f41f-9d70-4964-8edd-3261f94f93ac" /># Day 5 - Optimization in synthesis
 
 
 ## If Case constructs
@@ -252,4 +252,99 @@
  <img width="1121" height="416" alt="Screenshot 2026-05-22 124356" src="https://github.com/user-attachments/assets/5500a3d3-5900-48b7-9070-d0cfe52db1b2" />
 
 
-  
+## Labs on "for loop" and "for generate"
+
+
+### Lab For and For Generate part1
+
+
+* Open file `mux_generate.v`
+
+
+  <img width="1015" height="52" alt="Screenshot 2026-05-22 134937" src="https://github.com/user-attachments/assets/80192afc-e0fd-4b0d-aa92-3aca5c0f70ca" />
+
+
+* Lets simulate
+
+<img width="1757" height="851" alt="Screenshot 2026-05-22 135201" src="https://github.com/user-attachments/assets/b92aad14-f387-403d-85a0-8813f5b9caa1" />
+
+
+<img width="1855" height="622" alt="Screenshot 2026-05-22 135354" src="https://github.com/user-attachments/assets/4d83be51-44a7-4699-a5e5-fbbec1744270" />
+
+
+### Lab For and For Generate part2
+
+
+* Lets see `DeMUX` Example
+
+
+<img width="1396" height="107" alt="Screenshot 2026-05-22 135814" src="https://github.com/user-attachments/assets/971995cd-0b0c-490e-8dc3-247de6a3e47e" />
+
+
+<img width="1640" height="857" alt="Screenshot 2026-05-22 135930" src="https://github.com/user-attachments/assets/7db0541d-eb7e-4a41-a919-e77eb7e886de" />
+
+
+** Note :** Dont forget to initialise output to `0` as it leads to `iferred latch` after synthesis( observe `y_int = 8'b0;` in above image
+
+
+* Lets synthesize and compare both of them
+
+
+  <img width="1447" height="191" alt="Screenshot 2026-05-22 140439" src="https://github.com/user-attachments/assets/0fac6cc2-cf9e-484e-a869-2d88edd8a5c9" />
+
+
+<img width="1842" height="691" alt="Screenshot 2026-05-22 140539" src="https://github.com/user-attachments/assets/bd7c3f5b-c043-42a6-b9ea-a0e386d4c548" />
+
+
+<img width="1217" height="105" alt="Screenshot 2026-05-22 140641" src="https://github.com/user-attachments/assets/54518783-4af9-4685-859c-92ebd073a206" />
+
+
+<img width="1852" height="750" alt="Screenshot 2026-05-22 140657" src="https://github.com/user-attachments/assets/14f6fb6d-d80d-4b3d-9a78-8544a109526b" />
+
+
+* We can observe that both of them give same results but by using `For Loop` we can write code in short even inputs are more(Ex: 256).
+
+* Similarly we can also synthesize and compare them, which will also give same results
+
+
+  ### Lab For and For Generate part3
+
+
+* Files we use
+
+
+<img width="1133" height="66" alt="Screenshot 2026-05-22 141525" src="https://github.com/user-attachments/assets/219fa446-f61c-42d0-82fb-fd35f3f9efeb" />
+
+
+* Lets look `For generat loop`<br>Consider ripple carry adder
+
+
+<img width="828" height="857" alt="Screenshot 2026-05-22 141713" src="https://github.com/user-attachments/assets/91fba2da-a3bf-48be-aa10-01d5036d929a" />
+
+
+** Note:** Rule for Addition  
+
+
+<img width="966" height="252" alt="Screenshot 2026-05-22 141833" src="https://github.com/user-attachments/assets/971c97b1-038d-48a8-9ab7-677f49d73052" />
+
+
+### Lab For and For Generate part4
+
+
+* Now lets simulate
+* Here it is error as we are instantiating `FULL ADDER`, so while compiling we have to call that file also. We need to tell definition of `fa` to tool
+
+
+<img width="1065" height="230" alt="Screenshot 2026-05-22 142158" src="https://github.com/user-attachments/assets/8c8367ef-0993-4321-bae4-0c308894fe75" />
+
+
+* Now there wont be any error
+
+
+<img width="1097" height="202" alt="Screenshot 2026-05-22 142444" src="https://github.com/user-attachments/assets/6fad6e9d-a35d-4cf2-a16a-0a513eca5dd9" />
+
+
+<img width="1853" height="587" alt="Screenshot 2026-05-22 142610" src="https://github.com/user-attachments/assets/a3514160-4da4-423f-9413-9b812bb9ca62" />
+
+
+* We can try `synthesis` and `GLS`
