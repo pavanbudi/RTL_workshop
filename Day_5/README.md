@@ -161,3 +161,15 @@
   
 <img width="1852" height="705" alt="Screenshot 2026-05-22 014443" src="https://github.com/user-attachments/assets/637f845f-c62d-4635-9545-34285623d7c1" />
 
+
+### incomplete overlapping Case part4
+
+* Lets simulate synthesised netlist
+* We can observe that there is no confusion incase of netlist simulation as `Y` equal to `i2` for `10`, `i3` for `11`  whereas in `RTL` simultion `Y` got stucked. Therefore it is simulation mismatch
+* So overlapping cases is bad way of coding
+* So two cases `states` should not overlap with each other. All should be mutually exclusive
+
+  <img width="1851" height="687" alt="Screenshot 2026-05-22 115650" src="https://github.com/user-attachments/assets/81fdda03-82b2-4902-b7cd-b3e9715924eb" />
+
+
+  
