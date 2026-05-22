@@ -167,9 +167,89 @@
 * Lets simulate synthesised netlist
 * We can observe that there is no confusion incase of netlist simulation as `Y` equal to `i2` for `10`, `i3` for `11`  whereas in `RTL` simultion `Y` got stucked. Therefore it is simulation mismatch
 * So overlapping cases is bad way of coding
-* So two cases `states` should not overlap with each other. All should be mutually exclusive
+* So two cases `states` should not overlap with each other. All should be mutually exclusive. And it wont cause `inferred latches` also
 
   <img width="1851" height="687" alt="Screenshot 2026-05-22 115650" src="https://github.com/user-attachments/assets/81fdda03-82b2-4902-b7cd-b3e9715924eb" />
+
+
+
+  ## for loop and for generate
+
+
+  ### For Loop and For Generate part1
+  
+
+  * We will learn how to use `Looping` constrcucts to generate hardware and to simplify hardware
+  * `Generate for loop` used outside `always` block to instantiate hardware. Ex:To instantiate `500` `AND` gates.
+  * `For loop` used inside `always` block for evaluating `expressions`
+
+
+    <img width="1326" height="630" alt="Screenshot 2026-05-22 121422" src="https://github.com/user-attachments/assets/bb721ca0-3904-4030-9c5f-e69f3d4d7bdf" />
+
+    
+* Example using `For Loop` to decrease complexity of writing codes
+  
+
+  <img width="1293" height="645" alt="Screenshot 2026-05-22 121713" src="https://github.com/user-attachments/assets/d7a5e384-231a-4f22-b568-3ced367753a3" />
+
+
+<img width="1272" height="502" alt="Screenshot 2026-05-22 121749" src="https://github.com/user-attachments/assets/74b5877c-62c2-4184-99ee-9cd6c9aa89ba" />
+
+  
+* Similarly if we want `256:1 MUX`, write `256` istead of `32` and assume input is `i[255:0]`
+
+
+<img width="1272" height="542" alt="Screenshot 2026-05-22 121952" src="https://github.com/user-attachments/assets/7dfe784b-018e-4cd7-95b6-09c8d941a3a0" />
+
+
+### For Loop and For Generate part2
+
+
+* Similarly to write `DEMUX`
+
+
+<img width="1347" height="651" alt="Screenshot 2026-05-22 122313" src="https://github.com/user-attachments/assets/bcd140d5-92f8-423a-b338-561e0fe45e19" />
+
+
+* Lets study about `for generate`. It is used when we want to instantiate module multiple times
+
+
+  <img width="922" height="522" alt="Screenshot 2026-05-22 122832" src="https://github.com/user-attachments/assets/cf481698-28a2-44c5-be70-cd4b86364904" />
+
+
+* Lets see how to use it
+* Consider a example showing instantiating `AND` gate `8` times
+   ```
+   genvar i;
+   ```
+* It implies `i` used as generate variable
+  
+
+<img width="1158" height="265" alt="Screenshot 2026-05-22 123126" src="https://github.com/user-attachments/assets/b4e4bf8c-5b15-42fe-9486-46ab75770815" />
+
+
+* It creates
+  
+
+<img width="450" height="382" alt="Screenshot 2026-05-22 123338" src="https://github.com/user-attachments/assets/a9c93617-52a9-4764-ad23-44b14a52cf44" />
+
+
+### For Loop and For Generate part3
+
+* Consider example of `Ripple Carry Adder`
+* We can obsereve that same `Full adder` instantiated multiple times. So if no.of inputs increases, we can simplify coding by using `For Generate`(Ex for `256-bit` addition, we have to instantiate `Full Adder` `256` times)
+* Similarly there will be `IF generate`, if same condition met then generate hardware
+
+  
+<img width="1337" height="672" alt="Screenshot 2026-05-22 124341" src="https://github.com/user-attachments/assets/b4c3324f-0d2e-4693-84dd-5852f2cc2c95" />
+
+
+** NOTE:**  `For generate`, `if generate` used outside of `always block` to replicate hardware
+
+ * Summary
+
+
+ <img width="1121" height="416" alt="Screenshot 2026-05-22 124356" src="https://github.com/user-attachments/assets/5500a3d3-5900-48b7-9070-d0cfe52db1b2" />
 
 
   
